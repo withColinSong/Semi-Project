@@ -1,0 +1,111 @@
+
+
+* {
+    
+    box-sizing: border-box;
+    color: white;
+    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+/* 로고 검색하기, 장바구니*/
+
+.header-align {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+/* 버튼 */
+.btn-submit {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    height: 50px;
+    width: 300px;
+    margin-left: 50px;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* 비디오 */
+.section-video {
+    width: 1000px;
+    margin: auto;
+}
+
+.section-content {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    
+}
+
+/* 출시일 공개*/
+.section-content > hr {
+    width: 400px;
+    
+}
+
+.section-content > span {
+    font-size: small;
+    color: ghostwhite;
+    color: gray;
+    background-color: black;
+}
+
+
+.section-align {
+    background-color: black;
+}
+
+
+/* footer */
+
+.help-box {
+    color: black;
+}
+
+.list-box {
+    font-size: small;
+
+}
+
+.help-box {
+    font-size: 20px;
+    height: 100px;
+    width: 800px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+li {
+    list-style: none;
+    color: #808080;
+    
+}
+
+.footer-list {
+    padding: 20px;
+    color: grey;
+    background-color: #f5f5f7;
+}
+
+.list-box-hr {
+    margin: 10px 0px 10px 0;
+
+}
+
+.ul-align {
+    width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #0071e3;
+    font-weight: bold;
+}
+
