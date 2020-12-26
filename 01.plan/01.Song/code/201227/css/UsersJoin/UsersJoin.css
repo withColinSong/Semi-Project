@@ -1,0 +1,232 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.body {
+    background-color:black;
+}
+
+/* 회원가입 영역 잡기 */
+.div-container {
+    width: 800px;
+    margin: 100px auto 0 auto;
+    border: 1px solid rgb(250, 238, 238);
+    box-shadow: 0px 0px 10px 0px #8C9093;
+    background-color: white;
+    height: 200vh;
+}
+
+
+.welcome-img {
+    text-align: center;
+}
+
+.welcome-head {
+    text-align: center;
+    margin: 30px auto 0 auto;
+    font-size: 30px;
+}
+
+.section-hr {
+    width: 600px;
+    margin: 15px auto 0 auto;
+    
+}
+
+/* 세션 2 */
+.section-two {
+    width: 700px;
+    margin: 0px auto 15px auto;
+}
+
+
+
+/* 아이디 */
+
+.frm-label {
+    width: 500px;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 20px;
+    margin: 30px auto 0 auto;
+}
+
+.frm-input-id {
+    text-align: center;
+}
+
+.frm-input-id > input:first-child {
+    width: 400px;
+    height: 50px;
+    text-indent: 15px;
+
+}
+.frm-input-id > input:first-child:hover {
+    box-shadow: 0px 0px 2px 0px #202224;
+}
+
+.frm-input-id > input:last-child {
+    width: 100px;
+    height: 50px;
+    border: white;
+    background-color: black;
+    color: white;
+
+}
+
+/* 중복확인 */
+.frm-input-id > input:last-child:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+}
+
+/* 이름 */
+
+.frm-input-name {
+    text-align: center;
+}
+
+.frm-input-name > input:first-child {
+    width: 500px;
+    height: 50px;
+    text-indent: 15px;
+
+}
+.frm-input-name > input:first-child:hover {
+    box-shadow: 0px 0px 2px 0px #202224;
+}
+
+
+/* 비밀번호 */
+
+.frm-input-password {
+    text-align: center;
+}
+
+.frm-input-password > input:first-child {
+    width: 500px;
+    height: 50px;
+    text-indent: 15px;
+
+}
+.frm-input-password > input:first-child:hover {
+    box-shadow: 0px 0px 2px 0px #202224;
+}
+
+
+/* 우편번호 */
+
+.frm-input-zipcode {
+    text-align: center;
+}
+
+.frm-input-zipcode > input:first-child {
+    width: 300px;
+    height: 50px;
+    text-indent: 15px;
+
+}
+.frm-input-zipcode > input:first-child:hover {
+    box-shadow: 0px 0px 2px 0px #202224;
+}
+
+.frm-input-zipcode > input:nth-child(2) {
+    width: 200px;
+    height: 50px;
+    border: white;
+    background-color: black;
+    color: white;
+    text-indent: 15px;
+
+}
+
+.frm-input-zipcode > input:nth-child(2):hover {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+}
+
+
+.frm-input-zipcode > input:nth-child(3) {
+    margin-top: 2px;
+    width: 505px;
+    height: 50px;
+    text-indent: 15px;
+
+}
+
+.frm-input-zipcode > input:nth-child(3):hover {
+    box-shadow: 0px 0px 2px 0px #202224;
+}
+
+
+/* 생년월일 */
+
+.frm-input-birth {
+    text-align: center;
+}
+
+.frm-input-birth > select:nth-child(1) {
+    width: 165px;
+    height: 50px;
+    font-size: 15px;
+    text-indent: 15px;
+}
+
+.frm-input-birth > select:nth-child(1):hover {
+    box-shadow: 0px 0px 2px 0px #202224;
+}
+
+.frm-input-birth > select:nth-child(2) {
+    width: 165px;
+    height: 50px;
+    font-size: 15px;
+    text-indent: 15px;
+}
+
+.frm-input-birth > select:nth-child(2):hover {
+    box-shadow: 0px 0px 2px 0px #202224;
+}
+
+.frm-input-birth > select:nth-child(3) {
+    width: 165px;
+    height: 50px;
+    font-size: 15px;
+    text-indent: 15px;
+}
+
+.frm-input-birth > select:nth-child(3):hover {
+    box-shadow: 0px 0px 2px 0px #202224;
+}
+
+/* 가입하기 */
+.frm-submit {
+    width: 500px;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 20px;
+    margin: 30px auto 0 auto;
+}
+
+.frm-submit > input:nth-child(1) {
+    width: 505px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+ 
+}
+
+.frm-submit > input:nth-child(1):hover {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    
+}
+
