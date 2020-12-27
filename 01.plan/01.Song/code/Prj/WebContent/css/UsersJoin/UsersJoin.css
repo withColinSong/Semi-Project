@@ -16,7 +16,7 @@
 	border: 1px solid rgb(250, 238, 238);
 	box-shadow: 0px 0px 10px 10px white;
 	background-color: white;
-	height: 150vh;
+	height: 230vh;
 }
 
 .welcome-img {
@@ -83,26 +83,11 @@
 	color: white;
 }
 
-/* 중복확인 */
+/* 아이디 중복확인 */
 .frm-input-id>input:last-child:hover {
 	background-color: white;
 	color: black;
 	border: 1px solid;
-}
-
-/* 이름 */
-.frm-input-name {
-	text-align: center;
-}
-
-.frm-input-name>input:first-child {
-	width: 500px;
-	height: 50px;
-	text-indent: 15px;
-}
-
-.frm-input-name>input:first-child:hover {
-	box-shadow: 0px 0px 2px 0px #202224;
 }
 
 /* 비밀번호 */
@@ -120,7 +105,65 @@
 	box-shadow: 0px 0px 2px 0px #202224;
 }
 
+/* 이름 */
+.frm-input-name {
+	text-align: center;
+}
+
+.frm-input-name>input:first-child {
+	width: 500px;
+	height: 50px;
+	text-indent: 15px;
+}
+
+.frm-input-name>input:first-child:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
+
+/* 이메일 */
+.frm-input-email {
+	text-align: center;
+}
+
+.frm-input-email>input:first-child {
+	width: 500px;
+	height: 50px;
+	text-indent: 15px;
+}
+
+.frm-input-email>input:first-child:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
+
+
+/* 전화번호 */
+.frm-input-phone {
+	text-align: center;
+}
+
+.frm-input-phone>select:nth-child(1) {
+	width: 165px;
+	height: 50px;
+	font-size: 15px;
+	text-indent: 15px;
+}
+
+.frm-input-phone>select:nth-child(1):hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
+
+.frm-input-phone>input {
+	width: 330px;
+	height: 50px;
+	font-size: 15px;
+	text-indent: 15px;
+}
+
+.frm-input-phone>input:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
 /* 우편번호 */
+
 .frm-input-zipcode {
 	text-align: center;
 }

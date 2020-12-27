@@ -34,7 +34,7 @@
 			</section>
 
 			<section class="section-two">
-				<form class="frm-member" id="frm-member" action="" method="POST">
+				<form class="frm-member" id="frm-member" action="result.jsp" method="POST">
 					<div class="frm-label">
 						<label>아이디</label>
 						<span class="field-required"></span>
@@ -45,27 +45,47 @@
 					</div>
 
 					<div class="frm-label">
+						<label>비밀번호</label>
+						<span class="field-required"></span>
+					</div>
+					<div class="frm-input-password">
+						<input type="password" name="frm-password" placeholder="비밀번호 자리 8~20자">
+					</div>
+						
+					<div class="frm-label">
+						<label>비밀번호 재입력</label>
+						<span class="field-required"></span>
+					</div>
+					<div class="frm-input-password">
+						<input type="password" name="frm-password" placeholder="비밀번호 재입력">
+					</div>
+						
+					<div class="frm-label">
 						<label>이름</label>
 						<span class="field-required"></span>
 					</div>
 					<div class="frm-input-name">
 						<input type="text" name="frm-name" placeholder="성명을 입력해주세요.">
 					</div>
-
+					
 					<div class="frm-label">
-						<label>비밀번호</label>
+						<label>이메일</label>
 						<span class="field-required"></span>
 					</div>
-					<div class="frm-input-password">
-						<input type="text" name="frm-password" placeholder="비밀번호 자리 8~20자">
+					<div class="frm-input-email">
+						<input type="text" name="frm-email" placeholder="example@gmail.com">
 					</div>
+					
 
 					<div class="frm-label">
-						<label>비밀번호 재입력</label>
-						<span class="field-required"></span>
+						<label>전화번호</label>
 					</div>
-					<div class="frm-input-password">
-						<input type="text" name="frm-password" placeholder="비밀번호 재입력">
+					<div class="frm-input-phone">
+						<select name="phone_first">
+							<option selected >010</option>
+							<option>017</option>
+						</select>
+						<input type="text" name="frm-phone" placeholder="3333-3333">
 					</div>
 
 					<div class="frm-label">
@@ -82,21 +102,21 @@
 					</div>
 					<div class="frm-input-birth">
 						<select>
-							<% for(int i = 0; i < 12; i++) {%>
-							<!-- for(int i = 0; i < 12; i++)-->
-							<option><%= i+1%>일</option>
+							
+							<% for(int i = 1900; i < 2020; i++) {%>
+							<option selected><%= i+1%>년</option>
 							<% } %>
 						</select>
-
+						
 						<select>
 							<% for(int i = 0; i < 31; i++) {%>
 							<option><%= i+1%>월</option>
 							<% } %>
 						</select>
-
+						
 						<select>
-							<% for(int i = 1900; i < 2020; i++) {%>
-							<option><%= i+1%>년</option>
+							<% for(int i = 0; i < 12; i++) {%>
+							<option><%= i+1%>일</option>
 							<% } %>
 						</select>
 
