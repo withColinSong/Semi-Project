@@ -1,0 +1,36 @@
+/*footer*/
+.list-box {
+    font-size: small;
+}
+
+.help-box {
+    font-size: 20px;
+    height: 100px;
+    width: 800px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+.footer-list {
+    padding: 20px;
+    margin-top: 50px;
+    color: #4E4E4F;
+    background-color:white;
+}
+.list-box  a{
+    color: black;
+}
+.list-box-hr {
+    margin: 10px 0px 10px 0;
+
+}
+
+.ul-align {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
