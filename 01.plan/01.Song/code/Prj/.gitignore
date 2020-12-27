@@ -4,7 +4,7 @@ node_modules/**
 
 /.settings/
 /build/
-/src
+/src/bean
 
 
 WebContent/css/*.css
