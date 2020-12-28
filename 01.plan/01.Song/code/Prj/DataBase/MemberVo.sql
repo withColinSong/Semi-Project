@@ -1,18 +1,25 @@
 CREATE TABLE membervo(
-    seqno number,
-	mid varchar(200) primary key,
-	pwd varchar(200),
-	name varchar(100),
-	email varchar(100),
-    phone varchar(30),
-	zipcode varchar(200),
-	address varchar(200)
-
+    seqno NUMBER,
+	mid VARCHAR2(200) primary key,
+	pwd VARCHAR2(200),
+	name VARCHAR2(200),
+	email VARCHAR2(100),
+    phone VARCHAR2(100),
+	zipcode VARCHAR2(30),
+	address VARCHAR2(200),
+    joindate DATE
 );
 
-CREATE sequence seq_seqno;
+DROP TABLE membervo;
+DROP SEQUENCE seq_seqno;
 
+CREATE SEQUENCE seq_seqno;
 commit;
 
+SELECT * FROM membervo;
+
 INSERT INTO memberVO 
-Values(seq_seqno.nextval,'song', '1234', '송송', 'song@gmail.com', '010-3333-3333', '11-333', '서울시');
+VALUES(seq_seqno.nextval,'song', '1234', '송송', 'song@gmail.com', '010-3333-3333', '11-333', '서울시', sysdate);
+
+
+
