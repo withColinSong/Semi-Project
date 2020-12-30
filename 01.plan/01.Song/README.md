@@ -1,13 +1,17 @@
 
-# 🎉 20.12.29
+
+# 🎉 20.12.30
 
 - 서비스약관 동의 페이지 프론트 작업
-![](https://images.velog.io/images/withcolinsong/post/b7171ed5-e888-473c-a8ad-2640174b94f2/ezgif.com-gif-maker%20(1).gif)
+- 서비스약관 창 div로 띄우기
+
+![](https://images.velog.io/images/withcolinsong/post/b3a017d9-e8e0-4b5b-a4aa-54e8fb6a3264/ezgif.com-gif-maker%20(1).gif)
 
 ## 추가 해야 할 항목
 
 - `스크립트 작업 시` :  취소 버튼을 눌렀을 때 -> 메인으로 이동하기
-- 서비스 약관 `>` 클릭 시 약관 창 띄우기
+- `스크립트 작업 시` : 전체 동의 시 전체 버튼 눌리기
+~~- 서비스 약관 `>` 클릭 시 약관 창 띄우기~~
 
 - 아이디, 이름, 비밀번호, 비밀번호 재입력 데이터 유효성 검사
   - 아이디 중복 확인 
