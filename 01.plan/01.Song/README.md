@@ -1,9 +1,18 @@
 
+# 🎉 21.01.06
+- 회원가입 정보 미 입력시 alert창 띄우기
+- 아이디 중복 체크
+
+
 # 🎉 21.01.05
 - 약관 전체 동의
 - 회원가입 DataBase 연결 후 메인 페이지로 이동하기
+- 회원가입 완료 후 페이지 프론트 작업 
+
 
 ![](https://images.velog.io/images/withcolinsong/post/8a6353b2-b6ee-4340-8a59-7de3e30b37d2/ezgif.com-gif-maker%20(1).gif)
+
+![](https://images.velog.io/images/withcolinsong/post/9d5821d2-3b67-4a9c-8312-3a22795959dc/image.png)
 
 ## 추가 해야 할 항목
 
