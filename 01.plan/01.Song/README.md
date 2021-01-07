@@ -7,7 +7,7 @@
 
 ![](https://images.velog.io/images/withcolinsong/post/7b8fd408-03e9-4b91-9ea8-9a4fb793d7e5/image.png)
 
-![](https://images.velog.io/images/withcolinsong/post/9ba35d0a-f2ea-4564-bf42-63a823d771bf/ezgif.com-gif-maker.gif)
+![](https://images.velog.io/images/withcolinsong/post/58d4a143-f5ff-4dcc-9fb4-f861e5bd80f2/ezgif.com-gif-maker%20(2).gif)
 
 ![](https://images.velog.io/images/withcolinsong/post/bbfc413b-726e-4374-aa0d-407dcbe2ab85/image.png)
 
@@ -16,7 +16,6 @@
 # 🎉 21.01.06
 - 회원가입 정보 미 입력시 alert창 띄우기
 - 아이디 중복 체크
-
 
 # 🎉 21.01.05
 - 약관 전체 동의
