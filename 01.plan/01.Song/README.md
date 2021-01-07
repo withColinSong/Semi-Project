@@ -1,4 +1,11 @@
 
+# 🎉21.01.07
+- 회원정보 프론트 작업
+- 로그인 후 회원의 회원정보 수정 데이터 불러오기
+ 
+![](https://images.velog.io/images/withcolinsong/post/ebf2cdc4-f902-4f34-b792-ffb52e508e6f/image.png)
+![](https://images.velog.io/images/withcolinsong/post/bbfc413b-726e-4374-aa0d-407dcbe2ab85/image.png)
+
 # 🎉 21.01.06
 - 회원가입 정보 미 입력시 alert창 띄우기
 - 아이디 중복 체크
