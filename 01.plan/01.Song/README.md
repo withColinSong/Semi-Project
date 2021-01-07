@@ -3,8 +3,15 @@
 - 회원정보 프론트 작업
 - 로그인 후 회원의 회원정보 수정 데이터 불러오기
  
-![](https://images.velog.io/images/withcolinsong/post/ebf2cdc4-f902-4f34-b792-ffb52e508e6f/image.png)
+테이블
+
+![](https://images.velog.io/images/withcolinsong/post/7b8fd408-03e9-4b91-9ea8-9a4fb793d7e5/image.png)
+
+![](https://images.velog.io/images/withcolinsong/post/9ba35d0a-f2ea-4564-bf42-63a823d771bf/ezgif.com-gif-maker.gif)
+
 ![](https://images.velog.io/images/withcolinsong/post/bbfc413b-726e-4374-aa0d-407dcbe2ab85/image.png)
+
+- ~~전화번호 불러올 때 보완하기.....~~ ✔  `완료`
 
 # 🎉 21.01.06
 - 회원가입 정보 미 입력시 alert창 띄우기
