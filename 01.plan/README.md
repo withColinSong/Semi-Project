@@ -4,11 +4,13 @@
 - 회원정보 정규식 JavaScript 유효성 검사 기능 추가
 - 구매하기, 결제하기, 결제완료 프론트 작업 완료
 
-구매하기, 결제하기 페이지
+`구매하기, 결제하기 페이지`
+
 ![](https://images.velog.io/images/withcolinsong/post/8653f960-b0d3-4789-86fb-08321107fed2/ezgif.com-gif-maker.gif)
 
 
-결제완료 페이지
+`결제완료 페이지`
+
 ![](https://images.velog.io/images/withcolinsong/post/395ce7cd-b64a-4c6d-a439-811808af0394/image.png)
 
 ## 추가 해야 할 항목
