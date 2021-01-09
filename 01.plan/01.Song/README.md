@@ -1,4 +1,10 @@
 
+
+
+# 🎉21.01.09
+- 구매 페이지 프론트 작업
+![](https://images.velog.io/images/withcolinsong/post/ec7713c2-22fc-4c03-b37c-2c52e60aa06a/image.png)
+
 # 🎉21.01.07
 - 회원정보 프론트 작업
 - 로그인 후 회원의 회원정보 수정 데이터 불러오기
