@@ -1,8 +1,16 @@
 
+# 🎉21.01.12
+- 세미 프로젝트 끝😀
+
+# 🎉21.01.11
+- 구매하기, 결제완료 DB 연동하기 완료 
+- 구매하기 장바구니 데이터 가져오기 완료 
+
+![](https://images.velog.io/images/withcolinsong/post/c073d004-d176-4e64-827b-70bb87c7b8cc/ezgif.com-gif-maker%20(1).gif)
 
 
 # 🎉21.01.10
-- 토스 결제 API 구현 완료  
+- 토스 결제 API 구현 완료 
 
 ![](https://images.velog.io/images/withcolinsong/post/80ee3c4f-c8fe-4fae-a0ad-92135c32cdc0/ezgif.com-gif-maker.gif)
 
@@ -11,7 +19,7 @@
 ![](https://images.velog.io/images/withcolinsong/post/1a010224-ec1b-40cb-9f30-faa7789fb6fb/ezgif.com-gif-maker%20(1).gif)
 
 ## 추가 해야 할 항목
-- 구매하기, 결제완료 DB 연동하기
+~~- 구매하기, 결제완료 DB 연동하기~~
 - 할 수 있다면... `카카오 회원가입 API 연동`..해보기!!!
 ~~- 카드 결제 API~~
 
