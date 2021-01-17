@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="inquiry">
+
+	<insert id="insert" parameterType="inquirybook.InquiryBookVo">
+		INSERT ALL
+		INTO inquiry (INQUIRY_SERIAL, INQUIRY_MSERIAL, INQUIRY_MID, INQUIRY_PWD, INQUIRY_SUBJECT, INQUIRY_DOC, INQYIRY_VISIBLE, INQUIRY_DATE, INQUIRY_TYPE, INQUIRY_PSERIAL, INQUIRY_HIT)
+		VALUES(seq_inquiry.nextval, 0, #{memberName}, #{pwd}, #{subject}, #{doc}, #{docVisible},sysdate, #{inquiryType}, null, 0)
+		<if test="attList != null">
+			<foreach collection="attList" item="att">
+				INTO inquiry_photo(photo_serial, photo_pserial, photo_sysfile, photo_orifile)
+				VALUES(getInquiryAttSeq(), seq_inquiry.currval, #{att.sysFile}, #{att.oriFile})
+			</foreach>
+		</if>
+		SELECT * FROM dual
+	</insert>
+
+	<insert id="insert_att" parameterType="inquirybook.InquiryBookVo" >
+		INSERT ALL
+		<foreach collection="attList" item="att">
+			INTO inquiry_photo(photo_serial, photo_pserial, photo_sysfile, photo_orifile)
+			VALUES (getInquiryAttSeq(), ${serial}, #{att.sysFile}, #{att.oriFile})
+		</foreach>
+		SELECT * FROM dual
+	</insert>
+
+	<insert id="insertanswer" parameterType="inquirybook.InquiryBookVo">
+		INSERT ALL
+		INTO inquiry (INQUIRY_SERIAL, INQUIRY_MSERIAL, INQUIRY_MID, INQUIRY_PWD, INQUIRY_SUBJECT, INQUIRY_DOC, INQYIRY_VISIBLE, INQUIRY_DATE, INQUIRY_TYPE, INQUIRY_PSERIAL, INQUIRY_HIT)
+		VALUES(seq_inquiry.nextval, 0, '운영관리자', '${pwd}', '${subject}', '${doc}', #{docVisible}, sysdate, '${inquiryType}', ${pserial}, 0)
+		<if test="attList != null">
+			<foreach collection="attList" item="att">
+				INTO inquiry_photo(photo_serial, photo_pserial, photo_sysfile, photo_orifile)
+				VALUES(getInquiryAttSeq(), seq_inquiry.currval, #{att.sysFile}, #{att.oriFile})
+			</foreach>
+		</if>
+		SELECT * FROM dual
+	</insert>
+	
+	<select id="select" resultMap="voResult" parameterType="inquirybook.CsPage" resultType="inquirybook.InquiryBookVo">
+		<![CDATA[
+			SELECT * FROM (
+			SELECT rownum rno, m.* FROM
+			(SELECT b.inquiry_pserial, b.INQUIRY_PWD, b.INQYIRY_VISIBLE, b.inquiry_serial, b.inquiry_subject, b.inquiry_mid, b.inquiry_date, b.inquiry_hit, 
+			(lpad(' ', (level-1)*6+1, ' ') || decode(LEVEL, 1, ' ', '└ [답변 완료]') || b.inquiry_subject) subject,
+			(select count(photo_serial) cnt from inquiry_photo where photo_pserial=b.inquiry_serial) attCnt 
+			FROM inquiry b WHERE]]>	
+			<choose>
+				<when test="findType == 'null' or findType == ''">
+					INQUIRY_SUBJECT LIKE '%${findStr}%' OR INQUIRY_DOC LIKE '%${findStr}%' 
+				</when>
+				<when test="findType != 'null' and findStr != ''">
+					INQUIRY_TYPE = #{findType} AND(INQUIRY_SUBJECT LIKE '%${findStr}%' OR INQUIRY_DOC LIKE '%${findStr}%')
+				</when>
+				<when test="findType != 'null' and findStr == ''">
+					INQUIRY_TYPE = #{findType}
+				</when>
+			</choose>
+		<![CDATA[
+			START WITH inquiry_pserial IS NULL
+			CONNECT BY PRIOR inquiry_serial = inquiry_pserial
+			ORDER SIBLINGS BY inquiry_serial DESC) m
+			) WHERE rno between #{startNo} and #{endNo}
+		]]>	 
+	</select>
+	
+	<select id="tot_list_size" resultType="int" parameterType="bean.CsPage">
+		SELECT count(INQUIRY_SERIAL) FROM inquiry
+		WHERE
+		<choose>
+			<when test="findType == 'null' or findType == ''">
+				INQUIRY_SUBJECT LIKE '%${findStr}%' OR INQUIRY_DOC LIKE '%${findStr}%' 
+			</when>
+			<when test="findType != 'null' and findStr != ''">
+				INQUIRY_TYPE = #{findType} AND(INQUIRY_SUBJECT LIKE '%${findStr}%' OR INQUIRY_DOC LIKE '%${findStr}%')
+			</when>
+			<when test="findType != 'null' and findStr == ''">
+				INQUIRY_TYPE = #{findType}
+			</when>
+		</choose>
+	</select>
+	
+	<select id="view" resultType="inquirybook.InquiryBookVo" parameterType="int" resultMap="voResult">
+		SELECT iq.*, iq.inquiry_subject subject FROM inquiry iq WHERE INQUIRY_SERIAL = #{_parameter}
+	</select>
+	
+	<select id="select_att"  resultMap="attResult" resultType="inquirybook.InquiryBookAttVo" parameterType="int">
+		SELECT * FROM inquiry_photo WHERE photo_pserial = #{_parameter}
+	</select>
+	
+	<delete id="delete" parameterType="inquirybook.InquiryBookVo">
+		DELETE FROM inquiry WHERE INQUIRY_SERIAL = #{serial} and INQUIRY_PWD = #{pwd}
+	</delete>
+	
+	<delete id="delete_att_pserial" parameterType="int">
+		DELETE FROM inquiry_photo WHERE photo_pserial = #{_parameter}
+	</delete>
+	<update id="update" parameterType="inquirybook.InquiryBookVo">
+		UPDATE inquiry set INQUIRY_MID = #{memberName}, INQUIRY_SUBJECT = #{subject}, INQUIRY_DOC = #{doc} WHERE INQUIRY_SERIAL = #{serial} and INQUIRY_PWD = #{pwd}
+	</update>
+	
+	<update id="updateHit" parameterType="inquirybook.InquiryHitVo">
+		UPDATE inquiry SET INQUIRY_HIT = #{hit} WHERE INQUIRY_SERIAL = #{serial}
+	
+	</update>
+	
+	
+	<delete id="delete_att" parameterType="inquirybook.InquiryBookVo">
+		DELETE FROM inquiry_photo
+		<where>
+			<foreach collection="delFiles" item="att" separator="or">
+				photo_sysfile = #{att.sysFile}
+			</foreach>		
+
+		</where>	
+	</delete>
+	
+	<resultMap type="inquirybook.InquiryBookVo" id="voResult">
+		<result property="serial" column="INQUIRY_SERIAL"/>
+		<result property="inquiryType" column="INQUIRY_TYPE"/>
+		<result property="memberName" column="INQUIRY_MID"/>
+		<result property="pwd" column="INQUIRY_PWD"/>
+		<result property="subject" column="subject"/>
+		<result property="doc" column="INQUIRY_DOC"/>
+		<result property="docVisible" column="INQYIRY_VISIBLE"/>
+		<result property="created" column="INQUIRY_DATE"/>
+		<result property="pserial" column="INQUIRY_PSERIAL"/>
+		<result property="mserial" column="INQUIRY_MSERIAL"/>
+		<result property="hit" column="INQUIRY_HIT"/>
+	</resultMap>
+		
+	<resultMap type="inquirybook.InquiryBookAttVo" id="attResult">
+		<result property="serial" column="photo_serial"/>
+		<result property="pSerial" column="photo_pserial"/>
+		<result property="oriFile" column="photo_orifile"/>
+		<result property="sysFile" column="photo_sysfile"/>
+	</resultMap>
+	<resultMap type="inquirybook.InquiryBookVo" id=""></resultMap>
+</mapper>  

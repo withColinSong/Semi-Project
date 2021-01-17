@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.vision{
+    position: relative;
+    background-image: url("../images/비전.png");   
+    height: 100vh;
+    background-size: cover;
+}
+
+.vision h1{
+	padding-top: 350px;
+    text-align: center;
+}
+
+.vision-cover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.548);                                                                 
+    z-index:1;
+}
+
+.vision-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);                                                                   
+    font-size: 3rem;
+    line-height: 80px;
+    color: rgba(255, 255, 255, 0.815);
+    z-index: 2;
+    text-align: center;
+    margin-top: -13rem;
+}
+
+.vision2 ul{
+    text-align: center;
+    padding : 250px;
+}
+
+.vision2 li{
+    list-style: none;
+    display: inline-block;
+    width: 30rem;
+    margin: 0 20px 20px 0;
+    padding: 60px 60px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    font-size: 2rem;
+}
+
+.vision2 p{
+	font-size: 16px;
+	margin-top: 15px;
+}

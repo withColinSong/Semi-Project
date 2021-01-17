@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+/* 기존 마이 페이지 css */
+
+.table{
+	margin : 0 auto;
+	text-align :center;
+}
+
+.cs_func_page_header {
+	margin: 0 auto;
+	width: 800px;
+	text-align: center;
+	padding-top: 55px; 
+}
+
+.cs_category {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-around;
+	border:1px solid black;
+	height:50px;
+	align-content: center;
+	
+}
+.cs_category > p {
+	display: inline-block;
+	width: 34%;
+	color : black;
+	text-decoration : none;
+	height:50px;
+	line-height: 50px;
+}
+
+.cs_category > p:nth-child(2){
+	background: black;
+	color : white;
+}
+
+
+
+/*---------------------------*/
+svg{
+	
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* 회원가입 영역 잡기 */
+
+.section-welcome {
+margin-top: 50px;
+text-align: center;
+}
+
+/* */
+.section-hr {
+	width: 600px;
+	margin: 50px auto 50px auto;
+}
+
+
+.section-hr-two {
+	width: 600px;
+	margin: 80px auto 30px auto;
+}
+/* 세션 2 */
+.section-two {
+	width: 700px;
+	margin: 0px auto 15px auto;
+	height: 1500px;
+}
+
+.section-two > form {
+	height: 1000px;
+}
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="board">
+	<insert id="insert" parameterType="users.MemberVo">
+		INSERT INTO membervo(seqno, mid, pwd, name, email, phone, zipcode, address, joindate)VALUES(seq_seqno.nextval, #{mid}, #{pwd}, #{name}, #{email}, #{phone}, #{zipcode}, #{address}, sysdate)
+	</insert>
+
+</mapper>

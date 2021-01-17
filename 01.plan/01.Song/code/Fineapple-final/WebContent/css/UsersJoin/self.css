@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+
+.header {
+	padding: 30px;
+	margin: 10px 0;
+}
+.self-container {
+	padding: 30px;
+}
+
+.wrap_terms > p {
+	margin: 10px auto;
+}

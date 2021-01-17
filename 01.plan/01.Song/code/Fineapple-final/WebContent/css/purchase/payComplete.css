@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+/* 기존 마이 페이지 css */
+
+.table{
+	margin : 0 auto;
+	text-align :center;
+}
+
+.cs_func_page_header {
+	margin: 0 auto;
+	width: 800px;
+	text-align: center;
+	padding-top: 55px; 
+}
+
+.cs_category {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-around;
+	border:1px solid black;
+	height:50px;
+	align-content: center;
+	
+}
+.cs_category > p {
+	display: inline-block;
+	width: 34%;
+	color : black;
+	text-decoration : none;
+	height:50px;
+	line-height: 50px;
+}
+
+.cs_category > p:last-child{
+	background: black;
+	color : white;
+}
+
+
+/* finalPay */
+.finalPay div {
+	margin-top: 30px;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	width: 500px;
+	
+}
+
+
+.finalPay > div > input{
+	width: 285px;
+	height: 50px;
+	text-indent: 15px;
+	text-align: right;
+	margin-left: 10px;
+	padding: 10px;
+	border: none;
+}
+
+
+.finalPay> div > input:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+	border:none;
+}
+
+
+
+/* 결제 수단 */
+
+.finalPay_idea {
+	height: 1000px;
+	margin-bottom: 500px;
+}
+
+.finalPay_idea div {
+	margin-top: 30px;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	width: 500px;
+	
+}
+
+
+.pay_align > .pay_img {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.pay_img > label > img {
+	width: 150px;
+	cursor: pointer;
+	
+	
+}
+
+
+
+.finalPay_idea > div > select:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+
+}
+
+
+/* 쿠폰 할인 금액 */
+
+.finalPay_dis div {
+	margin-top: 40px;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	width: 500px;
+	
+}
+
+
+.finalPay_dis > div > input{
+	width: 390px;
+	height: 50px;
+	text-indent: 15px;
+	text-align: right;
+	margin-left: 10px;
+	padding: 10px;
+	border: none;
+}
+
+
+.finalPay_dis> div > input:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+	border:none;
+}
+
+
+/* 회원가입 영역 잡기 */
+.welcome-img {
+	text-align: center;
+}
+
+.welcome-head {
+	text-align: center;
+	margin: 60px auto 50px auto;
+	font-size: 30px;
+}
+
+.section-hr {
+	width: 600px;
+	margin: 50px auto 50px auto;
+}
+
+
+.section-hr-two {
+	width: 600px;
+	margin: 80px auto 30px auto;
+}
+/* 세션 2 */
+.section-two {
+	width: 700px;
+	margin: 0px auto 15px auto;
+	height: 1500px;
+}
+
+.section-two > form {
+	height: 1000px;
+}
+
+/* 아이디 */
+
+.frm-label {
+	width: 500px;
+	font-size: 20px;
+	height: 30px;
+	margin-top: 20px;
+	margin: 30px auto 5px auto;
+}
+
+.frm-input-id {
+	text-align: center;
+}
+
+.frm-input-id>input:first-child {
+	width: 500px;
+	height: 50px;
+	text-indent: 15px;
+}
+
+.frm-input-id>input:first-child:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+		background-color: white;
+	color: black;
+	border: 1px solid;
+}
+
+
+/* 배송메세지 */
+.frm-input-moving {
+	text-align: center;
+}
+
+.frm-input-moving select {
+	width: 400px;
+	height: 50px;
+	text-indent: 15px;
+}
+.frm-input-moving > select:hover {
+	box-shadow: 0px 0px 2px 0px #202224;	
+}
+
+.frm-input-moving>input {
+	width: 100px;
+	height: 50px;
+	border: white;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.frm-input-moving input:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+	background-color: white;
+	color: black;
+	border: 1px solid;
+}
+
+/* 할인쿠폰 */
+.frm-input-cupon {
+	text-align: center;
+}
+
+.frm-input-cupon select {
+	width: 400px;
+	height: 50px;
+	text-indent: 15px;
+}
+
+.frm-input-cupon > select:hover {
+	box-shadow: 0px 0px 2px 0px #202224;	
+}
+
+.frm-input-cupon>input{
+	width: 100px;
+	height: 50px;
+	border: white;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.frm-input-cupon>input:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+	background-color: white;
+	color: black;
+	border: 1px solid;
+}
+
+
+
+
+/* 이름 */
+.frm-input-name {
+	text-align: center;
+}
+
+.frm-input-name>input:first-child {
+	width: 500px;
+	height: 50px;
+	text-indent: 15px;
+}
+
+.frm-input-name>input:first-child:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
+
+/* 쿠폰 할인 금액 */
+.frm_coupon_pay {
+	text-align: center;
+}
+
+.frm_coupon_pay>input:first-child {
+	width: 500px;
+	height: 50px;
+	text-indent: 15px;
+	text-align: right;
+	padding: 10px;
+}
+
+.frm_coupon_pay>input:first-child:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
+
+
+
+
+
+/* 전화번호 */
+.frm-input-phone {
+	text-align: center;
+}
+
+.frm-input-phone>select:nth-child(1) {
+	width: 165px;
+	height: 50px;
+	font-size: 15px;
+	text-indent: 15px;
+}
+
+.frm-input-phone>select:nth-child(1):hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
+
+.frm-input-phone>input {
+	width: 330px;
+	height: 50px;
+	font-size: 15px;
+	text-indent: 15px;
+}
+
+.frm-input-phone>input:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
+/* 우편번호 */
+
+.frm-input-zipcode {
+	text-align: center;
+}
+
+.frm-input-zipcode>input:first-child {
+	width: 300px;
+	height: 50px;
+	text-indent: 15px;
+}
+
+.frm-input-zipcode>input:first-child:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
+
+.frm-input-zipcode>input:nth-child(2) {
+	width: 200px;
+	height: 50px;
+	border: white;
+	background-color: black;
+	color: white;
+	text-indent: 15px;
+	cursor: pointer;
+}
+
+.frm-input-zipcode>input:nth-child(2):hover {
+	background-color: white;
+	color: black;
+	border: 1px solid;
+}
+
+.frm-input-zipcode>input:nth-child(3) {
+	margin-top: 2px;
+	width: 505px;
+	height: 50px;
+	text-indent: 15px;
+}
+
+.frm-input-zipcode>input:nth-child(3):hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+}
+
+
+/* 결제하기 */
+.frm-submit {
+	width: 500px;
+	font-size: 20px;
+	margin: 30px auto 0 auto;
+	
+}
+
+.frm-submit>input {
+	width: 505px;
+	height: 80px;
+	background-color: black;
+	color: white;
+	margin-top: 50px;
+	font-size: 20px;
+	border: white;
+	cursor: pointer;
+
+}
+
+.frm-submit>input:hover {
+	box-shadow: 0px 0px 2px 0px #202224;
+	background-color: white;
+	color: black;
+	border: 1px solid;
+}
+
+.finalPay_idea {
+	height: 220px;
+}

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+#content {
+    width: 68.5%;
+}
+#content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 70px 0px 80px;
+    padding: 30px 0 !important;
+    max-width: none!important;
+	text-align : center;
+}
+
+
+.cate_top_txt {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+#cont-wrap .search_bar{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+
+.search_bar input{
+  background-color: white;
+  border: white;
+  height: 40px;
+  width: 50px;
+  font-size: 1rem;
+}
+
+.search_bar input{
+  width: 200px;
+  border: black solid 1px;
+  border-radius: 0;
+  font-size: 1rem;
+  text-align: center;
+  height: 39px;
+}
+
+.search_bar input[type=submit]{
+	background : black;
+	color : white;
+	width : 50px;
+	height : 40px;
+	cursor : pointer;
+}
+
+.search_bar input[type=submit]:hover{
+	color : black;
+	background : white;
+}
+
+#content #product_total{
+	float: left;
+}
+
+.btns{
+	
+	text-align : center;
+}
+
+.btns input{
+	border : white;
+	width: 30px;
+	height : 30px;
+	background-color : white;
+	cursor : pointer;
+	border : 1px solid black;
+}
+
+.btns input:hover{
+	color:white;
+	background-color : black;
+}

@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.여백1{
+    width: 1rem;
+    height: 200px;
+    background-color: #fff;
+}
+
+.여백2{
+    width: 1rem;
+    height: 150px;
+    background-color: #f7f7f7;
+}
+
+/* main */
+
+.main{
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.테두리 input{
+	border:none;
+}
+
+.phone-img{
+	width: 650px;
+    margin-top: 180px;
+    margin-left: 100px;
+    border-radius: 23px    
+}
+
+.summary{
+    margin-top: 200px;
+    margin-right: 250px;
+    line-height: 2;
+    position: relative;
+    margin-right: 250px;
+    float: right;
+    box-sizing: border-box;
+    width: 472px;
+    height: 500px;
+    padding: 50px 46px 46px;
+    background-color: #fff;
+    border-radius: 23px;
+    text-align: center;
+}
+
+#btncolor1, #btncolor2{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    background-color: black;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#btncolor2{
+    background-color: brown;
+}
+
+.btncolor1, .btncolor2{
+    cursor: pointer;
+}
+
+.summary> input{
+    text-align: center;
+}
+
+.summary>.choice{
+    height: 100px;
+}
+
+.btn1, .btn2 {
+    display: inline-block;
+    margin: 30px 10px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid rgba(20, 20, 20, 0.733);
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+/* menubar */
+.menubar2{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background: black;
+}
+
+.menubar2 h2{
+    padding-left: 400px;
+    display: inline;
+}
+
+.item-title{
+    background: black;
+    color: #fff;
+    display: flex;
+    list-style: none;
+    float: left;
+    line-height: 80px;
+    font-weight: bold;  
+    width: 100%; 
+}
+
+.menubar2 a{
+    text-decoration: none;
+    color: white;
+    margin: 0 0 0 30px
+}
+
+.item-title2 ul{
+    margin: 0 30px 0 0;
+    padding-left: 500px;
+}
+
+.item-title2 li{
+    line-height: 50px;
+    background: black;
+    display: flex;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 100x;
+    border: none;
+    float: left;
+    width: 70px;
+}
+
+.item-title2 button{
+    line-height: 50px;
+    display: inline-block;
+    margin: 10px;
+    padding: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background: #2189ff;
+    border-color: #2189ff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.jbFixed {
+    position: fixed;
+    top: 0px;
+    }
+
+.여백3{
+    width: 100%;
+    height: 100px;
+    background-color: #f7f7f7;
+}
+
+/* 특장점 */
+.item-benefits{
+    text-align: center;
+}
+
+.small-str2{
+    font-size: 13px;
+}
+
+/* 상품평 */
+.review{
+    text-align: center;
+}
+
+.total-review-menu{
+    margin-right: 800px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.write-review-btn{
+    padding: 7px 20px 7px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    background: #fff;
+    border-color: #c0c5c7;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.review-avg ul, .review-avg li{
+    display: inline-flex;
+    justify-content: center;
+    margin: 20px;
+    border: 1px solid #f7f7f7;
+    width: 1000px;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+    margin-right:10px;    
+}
+
+.total-review{
+    margin: 0px 400px 50px 400px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+/* 유의사항 */
+.note{
+    margin: 0px 400px 50px 400px;
+    padding: 50px;
+    background-color: #f7f7f7;
+    list-style-type: none;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.note>ul, .note>.bold{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.note p{
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.note-btn1, .note-btn2, .note-btn3{
+    font-size: 20px;
+    margin: 30px 20px 30px 0px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: right;
+    outline:none;
+    background-color: #f7f7f7;
+    
+}
+.note .bold{
+    font-weight: bold;
+}

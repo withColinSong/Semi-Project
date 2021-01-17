@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/* 회사소개 메인사진 */
+.main{
+    position: relative;
+    background-image: url("../images/바탕.png");   
+    height: 100vh;
+    background-size: cover;
+}
+
+.main-cover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.548);                                                                 
+    z-index:1;
+}
+
+.main .main-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);                                                                   
+    font-size: 3rem;
+    line-height: 80px;
+    color: rgba(255, 255, 255, 0.815);
+    z-index: 2;
+    text-align: center;
+    margin-top: -13rem;
+}
+
+/* CEO 인사말 */
+.ceo{
+    background-color: white;
+    height: 100vh;
+    margin-top: 30rem;
+    margin-bottom: 20rem;    
+}
+
+.ceo .ceo-content{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.ceo .hideme{
+    font-size: 1.8rem;
+}
+
+/* History */
+
+.history-content{
+    column-count: 3;
+    column-gap: 1px;
+    margin-bottom: 21rem;
+    padding: 0px 700px 0px 700px;
+}
+
+.history h1{
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.history #left{
+    float: left;
+}
+
+.history h1, .vision h1, .ci h1{
+    font-size: 2.5rem;
+}
+
+.history-date {
+    width: 150px;
+    text-align: center;
+}
+
+.history .arrow{ 
+    display: block;
+    margin: auto;
+    width: 130px;
+}
+
+.date{
+    font-weight: bolder;
+    
+}
+.date, .work{
+    font-size: 1.2rem;
+    margin: 3px;
+}
+
+.여백1{
+    background-color: none;
+    width: 100px;
+    height: 120px;
+}
+
+.여백2{
+    background-color: none;
+    width: 100px;
+    height: 160px;
+}
+
+/* 
+Vision
+.vision{
+    margin-top: 30rem;
+    margin-bottom: 21rem;    
+    text-align: center;
+}
+
+.vision-content{
+	margin-bottom: 90px;	
+}
+
+.vision ul{
+    text-align: center;
+    padding : 0 250px 0 250px;
+}
+
+.vision li{
+    list-style: none;
+    display: inline-block;
+    width: 30rem;
+    margin: 0 20px 20px 0;
+    padding: 60px 60px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    font-size: 2rem;
+}
+
+.vision p{
+	font-size: 16px;
+	margin-top: 15px;
+} */
+
+/* CI */
+.ci {
+    margin-top: 30rem;
+    text-align: center;
+    margin-bottom: 30rem;
+    font-size: 1.8rem;
+}
+
+.ci-img{
+	width: 500px;
+}
+
+.ci span{
+	font-weight: bold;
+}

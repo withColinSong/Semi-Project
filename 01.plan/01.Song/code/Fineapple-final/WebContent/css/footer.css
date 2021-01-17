@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/*footer*/
+.list-box {
+    font-size: small;
+}
+
+.help-box {
+    font-size: 20px;
+    height: 100px;
+    width: 800px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+.footer-list {
+    padding: 20px;
+    margin-top: 50px;
+    color: white;
+    background-color:black;
+}
+.list-box  a{
+    color: white;
+}
+.list-box-hr {
+    margin: 10px 0px 10px 0;
+
+}
+
+.ul-align {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* ---------- 해준 ---------- */
+
+.home_footer_container {
+	display: flex;
+	min-height: 400px;
+	width: 100%;
+	flex-direction: column;
+	margin: 0 auto;
+	background-color: #1b1b1b;
+	margin-top: 100px;
+}
+
+.footer_header {
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px 30px 60px 30px;
+	font-size: 0.9em;
+	border-bottom: 1px solid #919191;
+	color: #c6c6c6;
+	font-weight: bold;
+}
+
+.footer_body {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-around;
+	padding: 50px 30px 60px 30px;
+}
+.footer_body > div {
+	
+}
+.footer_body a {
+	font-size: 0.9em;
+	text-decoration: none;
+	color: #e2e2e2;
+}
+
+.footer_footer {
+	width: 80%;
+	margin: 0 auto;
+	color: #c6c6c6;
+	font-size: 0.9em;
+	padding: 30px 30px 60px 30px;
+	border-top: 1px solid #474747;
+	font-weight: bold;
+}
+.foot-main-list h4{
+	margin-bottom: 12px;
+}
+
+.foot-main-list li {
+	margin-bottom: 7px;
+	color: #e2e2e2;
+}
+
+
